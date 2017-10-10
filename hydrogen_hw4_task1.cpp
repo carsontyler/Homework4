@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+const int SIZE = 4;
 
 // Constants, Structs, Classes
 class HouseInfo
