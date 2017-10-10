@@ -1,21 +1,23 @@
 // File: hydrogen_hw4_task1
-// Created by Carson Tyler on 10/10/2017 for CS1410.
+// Created by Carson Tyler, Daryl Adams on 10/10/2017 for CS1410
 // Copyright ©2017 WSU
 #include <iostream>
 #include <string>
 using namespace std;
 
-
 // Constants, Structs, Classes
-class
+class HouseInfo
 {
 private:
-
+    int streetNum;
+    string streetName;
+    double price;
 public:
     //Constructor
+    HouseInfo(): streetNum(0), price(0.0){}
 
 //Prototypes
-    
+
 };
 
 //Prototypes
@@ -23,8 +25,8 @@ public:
 // Main Program
 int main()
 {
-    
-    
+
+
     return 0;
 }
 // Function Definitions
