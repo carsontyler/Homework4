@@ -33,3 +33,6 @@
 *.out
 *.app
 
+.gitignore
+.idea/workspace.xml
+cmake-build-debug/
