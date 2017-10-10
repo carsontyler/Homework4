@@ -13,45 +13,38 @@ private:
     int streetNum;
     string streetName;
     double price;
+    HouseInfo array[SIZE];
 public:
     //Constructor
     HouseInfo(): streetNum(0), price(0.0){}
+
+    void HouseInput ()
+    {
+        // Ask user for street number
+        cout << "Please enter the street number ";
+        cin >> streetNum;
+        // Ask user for street name
+        cout << "Please enter the street name ";
+        cin >> streetName;
+        // Ask user for house price
+        cout << "Please enter the price ";
+        cin >> streetName;
+        cout << "" << endl;
+    }
 };
 //Prototypes
-void HouseInput(HouseInfo array[SIZE]);
 void ShowHouse(HouseInfo array[SIZE]);
 int ComparePrices(HouseInfo array[SIZE]);
 // Main Program
 int main()
 {
-    HouseInfo h1;                               // Declare house variables
+    HouseInfo h1, h2, h3;                               // Declare house variables
     HouseInfo array[SIZE];                      // Declare array
-    HouseInput(array);
     h1 = array[0];
 
     return 0;
 }
 // Function Definitions
-void HouseInput(HouseInfo array[SIZE])
-{
-    for(int i = 0; i <SIZE; i++)
-    {
-        // Ask user for street number
-        cout << "Please enter the street number ";
-        cin >> array[i];
-        // Ask user for street name
-        cout << "Please enter the street name ";
-        cin >> array[i];
-        // Ask user for house price
-        cout << "Please enter the price ";
-        cin >> array[i];
-        cout << "" << endl;
-
-    }
-
-
-
-}
 void ShowHouse(HouseInfo array[SIZE])
 {
 
