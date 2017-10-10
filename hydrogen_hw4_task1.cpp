@@ -4,16 +4,15 @@
 #include <iostream>
 #include <string>
 using namespace std;
+// Constants, Structs, Classes
 const int SIZE = 3;
 
-// Constants, Structs, Classes
 class HouseInfo
 {
 private:
     int streetNum;
     string streetName;
     double price;
-    HouseInfo array[SIZE];
 public:
     //Constructor
     HouseInfo(): streetNum(0), price(0.0){}
@@ -26,6 +25,7 @@ public:
         // Ask user for street name
         cout << "Please enter the street name ";
         cin >> streetName;
+        cin.ignore(INT_MAX);
         // Ask user for house price
         cout << "Please enter the price ";
         cin >> streetName;
@@ -33,23 +33,15 @@ public:
     }
 };
 //Prototypes
-void ShowHouse(HouseInfo array[SIZE]);
-int ComparePrices(HouseInfo array[SIZE]);
+
 // Main Program
 int main()
 {
     HouseInfo h1, h2, h3;                               // Declare house variables
-    HouseInfo array[SIZE];                      // Declare array
+    HouseInfo array[SIZE];                              // Declare array
+    h1.HouseInput();
     h1 = array[0];
 
     return 0;
 }
 // Function Definitions
-void ShowHouse(HouseInfo array[SIZE])
-{
-
-}
-int ComparePrices(HouseInfo array[SIZE])
-{
-
-}
