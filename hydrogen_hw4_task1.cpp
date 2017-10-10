@@ -6,6 +6,7 @@
 using namespace std;
 // Constants, Structs, Classes
 const int SIZE = 3;
+const int INT_MAX = 1;
 
 class HouseInfo
 {
