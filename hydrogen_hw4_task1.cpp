@@ -6,7 +6,7 @@
 using namespace std;
 // Constants, Structs, Classes
 const int SIZE = 3;
-const int INT_MAX = 1;
+const int MAX = 1;
 
 class HouseInfo
 {
@@ -26,7 +26,7 @@ public:
         // Ask user for street name
         cout << "Please enter the street name ";
         cin >> streetName;
-        cin.ignore(INT_MAX);
+        cin.ignore(MAX);
         // Ask user for house price
         cout << "Please enter the price ";
         cin >> streetName;
@@ -40,8 +40,18 @@ int main()
 {
     HouseInfo h1, h2, h3;                               // Declare house variables
     HouseInfo array[SIZE];                              // Declare array
-    h1.HouseInput();
     h1 = array[0];
+
+    //Get user info for the first
+    cout << "Enter info for first house\n";
+    h1.HouseInput();
+
+    cout << "\nEnter info for second house\n";
+    h2.HouseInput();
+
+    cout << "\nEnter info for third house\n";
+    h3.HouseInput();
+
 
     return 0;
 }
