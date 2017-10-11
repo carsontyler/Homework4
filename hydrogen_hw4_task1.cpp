@@ -72,7 +72,7 @@ int main()
     return 0;
 }
 
-// Function Definitions//
+// Function Definitions
 void comparePrices(HouseInfo arr[])
 {
     if (arr[0].DisplayPrice() < arr[1].DisplayPrice())
