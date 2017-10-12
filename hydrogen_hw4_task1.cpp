@@ -6,33 +6,35 @@
 using namespace std;
 
 // Constants, Structs, Classes
-const int SIZE = 3;
+const int SIZE = 2;
 const int MAX = 1;
 
 class HouseInfo
 {
-private:
-    int streetNum;
-    string streetName;
-    double price;
-public:
-    //Constructor
-    HouseInfo(): streetNum(0), price(0.0){}
+    private:
+        int streetNum;
+        string streetName;
+        double price;
+    public:
+        //Constructor
+        HouseInfo(): streetNum(0), price(0.0){}
 
     void HouseInput()
     {
-        // Ask user for street number
-        cout << "\nPlease enter the street number: ";
-        cin >> streetNum;
-        // Ask user for street name
-        cout << "Please enter the street name: ";
-        cin >> streetName;
-        cin.ignore(MAX);
-        // Ask user for house price
-        cout << "Please enter the price: ";
-        cin >> price;
-        cout << "" << endl;
+            // Ask user for street number
+            cout << "\nPlease enter the street number: ";
+            cin >> streetNum;
+            // Ask user for street name
+            cout << "Please enter the street name: ";
+            cin >> streetName;
+            cin.ignore(MAX);
+            // Ask user for house price
+            cout << "Please enter the price: ";
+            cin >> price;
+            cout << "" << endl;
+
     }
+
     void HouseOutput()
     {
         cout << streetNum << " " << streetName << " for $["<< price << "]" << endl;
