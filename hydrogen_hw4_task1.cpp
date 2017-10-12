@@ -21,20 +21,18 @@ class HouseInfo
 
     void HouseInput()
     {
-            // Ask user for street number
-            cout << "\nPlease enter the street number: ";
-            cin >> streetNum;
-            // Ask user for street name
-            cout << "Please enter the street name: ";
-            cin >> streetName;
-            cin.ignore(MAX);
-            // Ask user for house price
-            cout << "Please enter the price: ";
-            cin >> price;
-            cout << "" << endl;
-
+        // Ask user for street number
+        cout << "\nPlease enter the street number: ";
+        cin >> streetNum;
+        // Ask user for street name
+        cout << "Please enter the street name: ";
+        cin >> streetName;
+        cin.ignore(MAX);
+        // Ask user for house price
+        cout << "Please enter the price: ";
+        cin >> price;
+        cout << "" << endl;
     }
-
     void HouseOutput()
     {
         cout << streetNum << " " << streetName << " for $["<< price << "]" << endl;
@@ -44,7 +42,6 @@ class HouseInfo
        return price;
     }
 };
-
 //Prototypes
 void comparePrices(HouseInfo arr[]);
 
@@ -64,10 +61,10 @@ int main()
     array[2] = h3;
 
     cout << "Your Market analysis is as follows: " << endl;
-    cout << "1 house at "; array[0].HouseOutput();
-    cout << "2 house at "; array[1].HouseOutput();
-    cout << "3 house at "; array[2].HouseOutput();
-    cout << endl;
+    for (int j = 0; j <= SIZE; j++)
+    {
+        cout << j + 1 << " house at "; array[j].HouseOutput();
+    }
 
     comparePrices(array);
 
@@ -81,7 +78,7 @@ void comparePrices(HouseInfo arr[])
     {
         if (arr[0].DisplayPrice() < arr[2].DisplayPrice())
             cout << "You should buy: House Number 1" << endl;
-       else  if (arr[0].DisplayPrice() > arr[2].DisplayPrice())
+        else  if (arr[0].DisplayPrice() > arr[2].DisplayPrice())
             cout << "You should buy: House Number 3" << endl;
         else if (arr[0].DisplayPrice() == arr[2].DisplayPrice())
             cout << "You should buy: House Number 1\nHouse Number 3" << endl;
