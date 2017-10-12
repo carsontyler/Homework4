@@ -26,8 +26,8 @@ class HouseInfo
         cin >> streetNum;
         // Ask user for street name
         cout << "Please enter the street name: ";
-        cin >> streetName;
         cin.ignore(MAX);
+        getline(cin, streetName);
         // Ask user for house price
         cout << "Please enter the price: ";
         cin >> price;
