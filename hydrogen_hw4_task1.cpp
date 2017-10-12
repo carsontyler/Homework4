@@ -80,40 +80,26 @@ void comparePrices(HouseInfo arr[])
     if (arr[0].DisplayPrice() < arr[1].DisplayPrice())
     {
         if (arr[0].DisplayPrice() < arr[2].DisplayPrice())
-        {
             cout << "You should buy: House Number 1" << endl;
-        }
-        if (arr[0].DisplayPrice() > arr[2].DisplayPrice())
-        {
+       else  if (arr[0].DisplayPrice() > arr[2].DisplayPrice())
             cout << "You should buy: House Number 3" << endl;
-        }
-        if (arr[0].DisplayPrice() == arr[2].DisplayPrice())
-        {
+        else if (arr[0].DisplayPrice() == arr[2].DisplayPrice())
             cout << "You should buy: House Number 1\nHouse Number 3" << endl;
-        }
     }
     else if (arr[1].DisplayPrice() < arr[0].DisplayPrice())
     {
         if (arr[1].DisplayPrice() < arr[2].DisplayPrice())
-        {
             cout << "You should buy: House Number 2" << endl;
-        }
         if (arr[2].DisplayPrice() < arr[1].DisplayPrice())
-        {
             cout << "You should buy: House Number 3" << endl;
-        }
         if (arr[1].DisplayPrice() == arr[2].DisplayPrice())
-        {
             cout << "You should buy: House Number 2\nHouse Number 3" << endl;
-        }
     }
     else if (arr[0].DisplayPrice() == arr[1].DisplayPrice())
     {
         cout << "You should buy: House Number 1\nHouse Number 2" << endl;
         if (arr[0].DisplayPrice() == arr[2].DisplayPrice())
-        {
             cout << "House Number 3" << endl;
-        }
     }
     else
     {
